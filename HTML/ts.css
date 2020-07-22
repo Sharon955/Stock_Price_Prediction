@@ -1,0 +1,127 @@
+/******************************
+* GLOBAL STYLES
+-------------------------------------------------- */
+
+body {
+    padding-bottom: 80px;
+    color: #292929;
+  }
+
+  .navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+  }
+  
+  .navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .navbar-wrapper .navbar .container {
+    width: auto;
+  }
+
+  .navbar-wrapper .navbar-brand {
+    width: auto;
+    color: white;
+  }
+
+  .navbar-wrapper .navbar-collapse {
+    width: auto;
+    color: white;
+  }
+
+  .header {
+    cursor: pointer;
+  }
+
+
+/*################
+Time Series
+##################*/
+
+.tsfig
+{
+	width: 100%;
+	background: #FFFFFF;
+	padding-top: 57px;
+	padding-bottom: 115px;
+}
+.fig
+{
+	width: 100%;
+	padding-top: 57px;
+	padding-bottom: 57px;
+}
+.fig_container
+{
+
+}
+.fig_img
+{
+	width: 80%;
+}
+.fig_img img
+{
+	max-width: 80%;
+}
+
+.fig_body
+{
+	padding-top: 32px;
+}
+.fig_title
+{
+	font-size: 30px;
+	font-weight: 500;
+	color: #0a284b;
+	line-height: 1.2;
+}
+.fig_text
+{
+	margin-top: 18px;
+}
+
+/* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+      margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+      padding-right: 0;
+      padding-left: 0;
+      border-radius: 4px; /* The navbar becomes detached from the top, so we round the corners */
+    }
+  
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 50px;
+      font-size: 21px;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .featurette-heading {
+      margin-top: 120px;
+    }
+  }
+  
