@@ -43,13 +43,6 @@ body {
     color: white;
   }
 
-  .tableauPlaceholder {
-    padding-top: 80px !important;
-    padding-right: 140px !important;
-    padding-left: 140px !important;
-    padding-bottom: 10px !important;
-  }
-
   .header {
     cursor: pointer;
   }
