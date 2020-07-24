@@ -43,7 +43,7 @@
                       <ul class="dropdown-menu">
                         <li class="disabled"><a href="#">Models</a></li>
                         <li><a href="TimeSeries.html">Time Series</a></li>
-                        <li><a href="FeatureImportance.html">Feature Importance</a></li>
+                        <li><a href="FeatureImportance New.html">Feature Importance</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="Dataset1.html">Dataset for Time series</a></li>
                         <li><a href="Dataset2.html">Dataset for Neural Network</a></li>
@@ -131,21 +131,12 @@
                       <div class="card-body">
                         <pre><code>
                           <samp>
-  import seaborn as sns
-  plt.figure(figsize=(7,7))
-  ax = sns.heatmap(
-  feature_raw.corr(), 
-  vmin=-1, vmax=1, center=0,
-  cmap=sns.diverging_palette(20, 220, n=200),
-  square=True,
-  annot=True,
-  )
-  ax.set_ylim(0, 7)
-  ax.set_xticklabels(
-  ax.get_xticklabels(),
-  rotation=45,
-  horizontalalignment='right'
-  );
+m = Prophet(weekly_seasonality=False)
+m.fit(df)
+future = m.make_future_dataframe(periods=365)
+forecast = m.predict(future)
+m.plot(forecast)
+m.plot_components(forecast)
                           </samp>
                         </code>
                       </div>
@@ -159,6 +150,7 @@
       </div>
 
   </div>
+</div>
 
 
 

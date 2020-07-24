@@ -47,7 +47,18 @@ body {
     cursor: pointer;
   }
   
-  
+footer {
+  background-color: rgb(9, 34, 104);
+  color: rgb(9, 34, 104);
+
+}
+
+  footer > p > a{
+    color: #f4f4f4;
+  }
+  footer > p{
+    color: #f4f4f4;
+  }
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
   
