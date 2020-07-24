@@ -16,15 +16,14 @@
 
     <!-- Custom styles for this template >
     <link href="style.css" rel="stylesheet"-->
-    <link rel="stylesheet" type="text/css" href="styles/ts.css">
+    <link rel="stylesheet" type="text/css" href="styles/FeatureImportance.css">
   </head>
 
 <!-- NAVBAR -->
 <body>
-  <div class="navbar-wrapper">
-    <div class="container">
-
-      <nav class="navbar navbar-inverse navbar-static-top" style="background-color: #002b3b">
+  <div class="container">
+    <div class="row">
+       <nav class="navbar navbar-inverse navbar-static-top" style="background-color: #002b3b">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -61,59 +60,141 @@
         </div>
       </nav>
     </div>
-  </div>
 
-<!-- BODY -->
-  <div class="tsfig">
-    <div class = "container">
-      <div class = "col-lg-8">
-        <div class = figs>
-          <!-- Fig -->
-          <div class = "fig">
-            <div class = "fig_container">
-              <div class = "fig_img"><img src = "images/Feature_Scatter.png" alt=""></div>
-            </div>
-            <div class = "fig_body">
-              <div class = "fig_title">Price_Actual PNG</div>
-              <div class = "fig_text">
-                <p>Python code here</p>
-              </div>
-            </div>
+
+    <div class="row">
+      <div class="card border-secondary mb-3">
+        <h3 class="card-header"><strong>MultiLinear Regression Check</strong></h3>
+        <div class="card-body">
+          <img src="../Image/Feature_Scatter.png" alt="Feature Scatter">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="card mb-3">
+        <h3 class="card-header"><strong>Correlation Matrix</strong></h3>
+        <div class="row no-gutters">
+          <div class="col-md-8">
+            <img src="..." class="card-img" alt="...">
           </div>
-          <!--Fig2-->
-          <div class = "fig">
-            <div class = "fig_container">
-              <div class = "fig_img"><img src = "images/Feature_Heatmap.png" alt=""></div>
-            </div>
-            <div class = "fig_body">
-              <div class = "fig_title">Time Series Fig 2</div>
-              <div class = "fig_text">
-                <p>Python code here</p>
+          <div class="col-md-4">
+            <div class="card-body">
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Description
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Correlation coefficient ranking:
+                    </div>
+                    <div class="card-body">
+                      Operating Income > Sales > Net Income
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Code
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus 
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <!--Fig3-->
-          <div class = "fig">
-            <div class = "fig_container">
-              <div class = "fig_img"><img src = "images/Feature_Bar.png" alt=""></div>
-            </div>
-            <div class = "fig_body">
-              <div class = "fig_title">Time Series Fig 3</div>
-              <div class = "fig_text">
-                <p>Python code here / text</p>
-              </div>
+              
+             
             </div>
           </div>
         </div>
       </div>
     </div>
+
+
+
+    <div class="row">
+      <div class="card mb-3">
+        <h3 class="card-header"><strong>Gradient Boosting Feature Importance</strong></h3>
+        <div class="row no-gutters">
+          <div class="col-md-8">
+            <img src="..." class="card-img" alt="...">
+          </div>
+          <div class="col-md-4">
+            <div class="card-body">
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Description
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Correlation coefficient ranking:
+                    </div>
+                    <div class="card-body">
+                      Operating Income > Net Income > Operating Margin
+                    </div>
+                    <div class="card-body">
+                      Operating Income has the most prediction impact among all 6 fundamental factors, which aligns with 
+                      the Correlation Matrix. This could be due to Operating Income’s place in the financial statements as a simple 
+                      proxy for the cash profitability of a business.
+                    </div>
+                    <div class="card-body">
+                      However, the ranking is not the same as the result of Correlation Matrix - high correlation coefficient doesn't
+                      necessarily main high impact on predicting target value.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Code
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
   </div>
+
+
+
 <!-- FOOTER -->
-<footer>
-  <p class="text-center">&copy; 2020 Stock Price Prediction &middot; Copy Right &middot; Team lalala</p>
-  <p class="text-center"> <a href="https://towardsdatascience.com/feature-importance-with-neural-network-346eb6205743">Reference for Feature Importance</a></p>
-  <p class="text-center"> <a href="https://facebook.github.io/prophet/docs/quick_start.html">Reference for Price Prediction</a></p>
-</footer>
+  <footer>
+    <p class="text-center">&copy; 2020 Stock Price Prediction &middot; Copy Right &middot; Team lalala</p>
+    <p class="text-center"> <a href="https://towardsdatascience.com/feature-importance-with-neural-network-346eb6205743">Reference for Feature Importance</a></p>
+    <p class="text-center"> <a href="https://facebook.github.io/prophet/docs/quick_start.html">Reference for Price Prediction</a></p>
+  </footer>
 
     </div><!-- /.container -->
     <!-- Bootstrap core JavaScript
@@ -123,5 +204,5 @@
     <script src="bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+</body>
 </html>
