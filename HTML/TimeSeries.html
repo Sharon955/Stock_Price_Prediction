@@ -16,94 +16,102 @@
 
     <!-- Custom styles for this template >
     <link href="style.css" rel="stylesheet"-->
-    <link rel="stylesheet" type="text/css" href="styles/ts.css">
+    <link rel="stylesheet" type="text/css" href="style/ts.css">
   </head>
 
 <!-- NAVBAR -->
-<body>
-  <div class="navbar-wrapper">
-    <div class="container">
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
 
-      <nav class="navbar navbar-inverse navbar-static-top" style="background-color: #002b3b">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Stock Price Prediction</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualization<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="PythonFig.html">Figs</a></li>
-                      <li><a href="PythonCode.html">Code</a></li>
-                </ul>
+        <nav class="navbar navbar-inverse navbar-static-top" style="background-color: #002b3b">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Stock Price Prediction</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualization<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="PythonFig.html">Figs</a></li>
+                        <li><a href="PythonCode.html">Code</a></li>
+                  </ul>
+                  </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Machine Learning<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li class="disabled"><a href="#">Models</a></li>
+                        <li><a href="TimeSeries.html">Time Series</a></li>
+                        <li><a href="FeatureImportance.html">Feature Importance</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="Dataset1.html">Dataset for Time series</a></li>
+                        <li><a href="Dataset2.html">Dataset for Neural Network</a></li>
+                  </ul>
                 </li>
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Machine Learning<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li class="disabled"><a href="#">Models</a></li>
-                      <li><a href="TimeSeries.html">Time Series</a></li>
-                      <li><a href="FeatureImportance.html">Feature Importance</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="Dataset1.html">Dataset for Time series</a></li>
-                      <li><a href="Dataset2.html">Dataset for Neural Network</a></li>
-                </ul>
-              </li>
-            </ul>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
-  </div>
 
-<!-- BODY -->
-  <div class="tsfig">
-    <div class = "container">
-      <div class = "row">
-      <!--div class = "figs"-->
-          <!-- Fig -->
-            <div class = "column">
-              <div class = "fig_img"><img src = "images/Price_Forecast.png" alt=""></div>
-                <div class = "fig_body">
-                  <div class = "fig_title">Price_Actual PNG</div>
-                  <div class = "fig_text">
-                    <p>Python code here</p>
-                  </div>
-                </div>
-            </div>
-          <!--Fig2-->
-            <div class = "column">
-              <div class = "fig_img"><img src = "images/Price_Actual.png" alt=""></div>
-                <div class = "fig_body">
-                <div class = "fig_title">Price_Actual PNG</div>
-                  <div class = "fig_text">
-                    <p>Python code here</p>
-                  </div>
-                </div>
-            </div>
-          <!--Fig3-->
-          <div class = "fig">
-            <div class = "fig_container">
-              <div class = "fig_img"><img src = "images/Price_Components.png" alt=""></div>
-            </div>
-            <div class = "fig_body">
-              <div class = "fig_title">Time Series Fig 3</div>
-              <div class = "fig_text">
-                <p>Python code here</p>
-              </div>
-            </div>
+
+<!-- haha -->
+  <div class="container">
+    <!-- haha -->
+    <div class="row row-lg-eq-height">
+      <div class="col-sm-6 col-6 col-mid-6 col-lg-6">
+        <div class="ts_image"><img src = "images/Price_Actual.png" alt="" width = 600px, height = 350px></div>
+      </div>
+      <div class="col-sm-6 col-6 col-mid-6 col-lg-6">
+        <div class="ts_content d-flex flex-column">
+          <div class="ts_image"><img src = "images/Price_Forecast.png" alt="" width = 600px, height = 350px></div>
+      </div>
+    </div>
+    
+    <div class="row row-lg-eq-height">
+      <div class="col-lg-12 order-lg-1 order-2">
+        <div class="ts_content d-flex flex-column align-items-start justify-content-center">
+          <div class="ts_title">Actual Stock Price VS. Predicted Stock Price</div>
+          <div class="ts_subtitle">Comparison between the two charts</div>
+          <div class="ts_text">
+            <p>Machine Learning model smooths out previous price action and using historic trend line predicts a less volatile short-term price performance, with variability in results increasing the further out in time the projection is made.  The model projects a priceof ~3,250 by June 2020, with the high end of the projection taking the Index level tojust under 3,500 and the low end barely staying above 3,000</p>
+            <p>In real life, we saw the Index accelerate to just under 3,500 in a very short order of time before gapping down to ~2,100 within a matter of weeks.  The Index quickly rebounded after that to a ~3,100 level.  While the Index did end up at a level predicted by the Machine Learning model it did so with much more volatility than the model initially predicted
+            </p>
           </div>
         </div>
       </div>
-    </div>
+
+      <div class="row row-lg-eq-height">
+        <div class="col-sm-6 col-6 col-mid-6 col-lg-6">
+          <div class="ts_image"><img src = "images/Price_Components.png" alt="" width = 800px, height = 800px></div>
+        </div>
+      </div>
+      <div class="row row-lg-eq-height">
+        <div class="col-lg-12 order-lg-3 order-1">
+          <div class="ts_content d-flex flex-column align-items-start justify-content-center">
+            <div class="ts_title">Actual Stock Price VS. Predicted Stock Price</div>
+            <div class="ts_subtitle">Comparison between the two charts</div>
+            <div class="ts_text">
+              <p>The first chart shows a smoothed-out version of the Machine Learning model projection above.  The chart below it shows the seasonality of Index results within a given year.  It can be observed that return tend to increase from the beginning of the year until May, then they begin their slow and gradual descent until there is a quick rebound in August followed by the continuation of the declining trend.  This tends to affirm the old Wall Street adage of “Sell in May and Go Away!” amongst other seasonal trends such as tax-loss and performance maintenance selling, and portfolio construction buying in the beginning of a year.</p>
+            </div>
+          </div>
+        </div>
   </div>
+
+
+
+
+
+
 <!-- FOOTER -->
 <footer>
   <p class="text-center">&copy; 2020 Stock Price Prediction &middot; Copy Right &middot; Team lalala</p>
